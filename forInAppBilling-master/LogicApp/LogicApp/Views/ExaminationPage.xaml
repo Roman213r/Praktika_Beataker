@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:LogicApp.ViewModels"
+    x:Class="LogicApp.Views.ExaminationPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Frame CornerRadius="100" BorderColor="Green" HorizontalOptions="Center" Padding="5" WidthRequest="20" HeightRequest="20">
+                <Label Text="{Binding Timer}" TextColor="Green" HorizontalTextAlignment="Center"/>
+            </Frame>
+
+            <Label Text="{Binding Letter}" HorizontalTextAlignment="Center" TextColor="black" FontSize="14" Padding="20"/>
+
+            <FlexLayout x:Name="SelectType" IsVisible="false" BindableLayout.ItemsSource="{Binding Options}" Wrap="Wrap" Padding="20">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Button Text="{Binding .}" Command="{Binding Source={x:RelativeSource AncestorType={x:Type vm:ExaminationViewModel}}, Path=SelectOptionCommand}" CommandParameter="{Binding .}" CornerRadius="10" Padding="0" HeightRequest="40" BackgroundColor="White" BorderWidth="1" BorderColor="Silver" Margin="5" FlexLayout.Basis="50%"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </FlexLayout>
+
+
+            <StackLayout x:Name="LetterType" IsVisible="false" Padding="20">
+                <Editor x:Name="Letter" />
+                <Button Text="Отправить" Command="{Binding Source={x:RelativeSource AncestorType={x:Type vm:ExaminationViewModel}}, Path=SelectOptionCommand}" CommandParameter="{Binding Source={x:Reference Letter}, Path=Text}" CornerRadius="10" Padding="0" WidthRequest="100" HeightRequest="40" BackgroundColor="White" BorderWidth="1" BorderColor="Silver" Margin="5" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

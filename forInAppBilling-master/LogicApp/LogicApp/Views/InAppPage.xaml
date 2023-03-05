@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="LogicApp.Views.InAppPage"
+    xmlns:image="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:svg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms">
+    <Grid>
+        <image:CachedImage Source="resource://LogicApp.Resources.pictures.pricepage.bg.png" Aspect="AspectFill"/>
+        <StackLayout HorizontalOptions="CenterAndExpand" Padding="20">
+            <StackLayout HorizontalOptions="EndAndExpand">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2" />
+
+                </StackLayout.GestureRecognizers>
+                <svg:SvgCachedImage Source="resource://LogicApp.Resources.pictures.close.svg" WidthRequest="20" HeightRequest="20"/>
+            </StackLayout>
+            <image:CachedImage Source="resource://LogicApp.Resources.pictures.pricepage.logo.png"/>
+            <Label Text="Вивчайте з логiкою" TextTransform="Uppercase" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+            <Label Text="Спiвзвучнiсть, асоціації та рими" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+            <FlexLayout JustifyContent="SpaceAround" Padding="10">
+                <StackLayout>
+                    <image:CachedImage Source="resource://LogicApp.Resources.pictures.pricepage.icon1.png"/>
+                    <Label Text="2,500 слiв" HorizontalTextAlignment="Center" TextColor="White"/>
+                </StackLayout>
+                <StackLayout>
+                    <image:CachedImage Source="resource://LogicApp.Resources.pictures.pricepage.icon2.png"/>
+                    <Label Text="80 годин" HorizontalTextAlignment="Center" TextColor="White"/>
+                </StackLayout>
+            </FlexLayout>
+            <FlexLayout JustifyContent="SpaceAround" Padding="10">
+                <StackLayout>
+                    <image:CachedImage Source="resource://LogicApp.Resources.pictures.pricepage.icon3.png"/>
+                    <Label Text="Вимова" HorizontalTextAlignment="Center" TextColor="White"/>
+                </StackLayout>
+                <StackLayout>
+                    <image:CachedImage Source="resource://LogicApp.Resources.pictures.pricepage.icon4.png"/>
+                    <Label Text="Значення" HorizontalTextAlignment="Center" TextColor="White"/>
+                </StackLayout>
+                <StackLayout>
+                    <image:CachedImage Source="resource://LogicApp.Resources.pictures.pricepage.icon5.png"/>
+                    <Label Text="Написання" HorizontalTextAlignment="Center" TextColor="White"/>
+                </StackLayout>
+            </FlexLayout>
+            <Frame CornerRadius="30" BackgroundColor="Green" HeightRequest="40" Padding="0" Margin="10">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Frame.GestureRecognizers>
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <FlexLayout JustifyContent="SpaceAround">
+                        <Label Text="1 мiсяць користування" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="80 UAH" FontAttributes="Bold" TextColor="White"/>
+                    </FlexLayout>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="30" BackgroundColor="Red" HeightRequest="40" Padding="0" Margin="10">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                </Frame.GestureRecognizers>
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <FlexLayout JustifyContent="SpaceAround" >
+                        <Label Text="Разовий платiж" TextTransform="Uppercase" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="500 UAH" FontAttributes="Bold" TextColor="White"/>
+                    </FlexLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </Grid>
+</ContentPage>

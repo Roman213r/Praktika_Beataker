@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Resources\pictures\exampage\**" />
+    <Compile Remove="Resources\pictures\pricepage\**" />
+    <EmbeddedResource Remove="Resources\pictures\exampage\**" />
+    <EmbeddedResource Remove="Resources\pictures\pricepage\**" />
+    <None Remove="Resources\pictures\exampage\**" />
+    <None Remove="Resources\pictures\pricepage\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="MultilingualResources\LogicApp.uk.xlf" />
+    <None Remove="Services\Interfaces\" />
+    <None Remove="ExaminationResources\" />
+    <None Remove="DocumentFormat.OpenXml" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="ClosedXML" />
+    <None Remove="ExcelDataReader" />
+    <None Remove="ExaminationResources\test.xlsx" />
+    <None Remove="ExaminationResources\en_letters.xlsx" />
+    <None Remove="Resources\Images\" />
+    <None Remove="Resources\Images\pricepage\" />
+    <None Remove="Xamarin.FFImageLoading.Svg.Forms" />
+    <None Remove="Xamarin.FFImageLoading.Forms" />
+    <None Remove="Resources\pictures\close.svg" />
+    <None Remove="SkiaSharp.Views.Forms" />
+    <None Remove="Resources\pictures\exampage\" />
+  </ItemGroup>
+    <ItemGroup>
+    <Compile Update="Resources\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SubgroupsPage.xaml.cs">
+      <DependentUpon>SubgroupsPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Plugin.FirebaseStorage" Version="4.1.0" />
+    <PackageReference Include="Plugin.InAppBilling" Version="4.0.2" />
+    <PackageReference Include="Plugin.Multilingual" Version="1.0.2" />
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.5.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="ClosedXML" Version="0.95.4" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="2.80.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="MultilingualResources\LogicApp.uk.xlf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExaminationResources\en_letters.xlsx" />
+    <EmbeddedResource Include="Resources\pictures\close.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppResources.en.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\AboutPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\ItemDetailPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\ItemsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\NewItemPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="ExaminationResources\" />
+    <Folder Include="Resources\pictures\" />
+  </ItemGroup>
+</Project>

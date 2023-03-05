@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Про</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Група</value>
+  </data>
+  <data name="Groups" xml:space="preserve">
+    <value>Групи</value>
+  </data>
+  <data name="GroupSelection" xml:space="preserve">
+    <value>Почати!</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Далі</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Ні</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Попередній</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Прогресія: </value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Продовжити</value>
+  </data>
+  <data name="ResumeQuestion" xml:space="preserve">
+    <value>Ви хочете відновити роботу там, де ви були?</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Так</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Англійська з логікою</value>
+  </data>
+  <data name="DescriptionGroup1" xml:space="preserve">
+    <value>Співзвучні слова</value>
+  </data>
+  <data name="DescriptionGroup2" xml:space="preserve">
+    <value>Односкладові слова</value>
+  </data>
+  <data name="DescriptionGroup3" xml:space="preserve">
+    <value>Двоскладові слова з асоціаціями</value>
+  </data>
+  <data name="DescriptionGroup4" xml:space="preserve">
+    <value>Складені слова</value>
+  </data>
+  <data name="DescriptionGroup5" xml:space="preserve">
+    <value>Однокореневі слова</value>
+  </data>
+  <data name="GroupeDescription" xml:space="preserve">
+    <value>Опис групи</value>
+  </data>
+  <data name="NeverShowAgain" xml:space="preserve">
+    <value>Ніколи не показуйте знову</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="NothingResume" xml:space="preserve">
+    <value>Нічого відновити</value>
+  </data>
+  <data name="NothingResumeText" xml:space="preserve">
+    <value>Ви ще нічого не почали.
+Виберіть групу.</value>
+  </data>
+  <data name="sgAnimals" xml:space="preserve">
+    <value>Тварини</value>
+  </data>
+  <data name="sgApparel" xml:space="preserve">
+    <value>Одяг</value>
+  </data>
+  <data name="sgBehaviour" xml:space="preserve">
+    <value>Поведінка</value>
+  </data>
+  <data name="sgEconomics" xml:space="preserve">
+    <value>Економіка</value>
+  </data>
+  <data name="sgBody" xml:space="preserve">
+    <value>Тіло</value>
+  </data>
+  <data name="sgBuilding" xml:space="preserve">
+    <value>Будівництво</value>
+  </data>
+  <data name="sgClothes" xml:space="preserve">
+    <value>Одяг</value>
+  </data>
+  <data name="sgEducation" xml:space="preserve">
+    <value>Освіта</value>
+  </data>
+  <data name="sgEmotion" xml:space="preserve">
+    <value>Емоції</value>
+  </data>
+  <data name="sgFood" xml:space="preserve">
+    <value>Їжа</value>
+  </data>
+  <data name="sgJob" xml:space="preserve">
+    <value>Робота</value>
+  </data>
+  <data name="sgLeisure" xml:space="preserve">
+    <value>Дозвілля</value>
+  </data>
+  <data name="sgNature" xml:space="preserve">
+    <value>Природа</value>
+  </data>
+  <data name="sgOther" xml:space="preserve">
+    <value>Інші</value>
+  </data>
+  <data name="sgPeople" xml:space="preserve">
+    <value>Люди</value>
+  </data>
+  <data name="sgReligion" xml:space="preserve">
+    <value>Релігія</value>
+  </data>
+  <data name="sgTechnology" xml:space="preserve">
+    <value>Технологія</value>
+  </data>
+  <data name="sgTransport" xml:space="preserve">
+    <value>Транспорт</value>
+  </data>
+  <data name="sgEnvironment" xml:space="preserve">
+    <value>Навколишнє середовище</value>
+  </data>
+  <data name="sgMachinery" xml:space="preserve">
+    <value>Машини</value>
+  </data>
+  <data name="sgMedicine" xml:space="preserve">
+    <value>Медицина</value>
+  </data>
+  <data name="sgMilitary" xml:space="preserve">
+    <value>Військові</value>
+  </data>
+  <data name="sgMusic" xml:space="preserve">
+    <value>Ст</value>
+  </data>
+  <data name="sgNationality" xml:space="preserve">
+    <value>Громадянство</value>
+  </data>
+  <data name="sgPolitics" xml:space="preserve">
+    <value>Політика</value>
+  </data>
+  <data name="sgProfessions" xml:space="preserve">
+    <value>Професії</value>
+  </data>
+  <data name="sgScience" xml:space="preserve">
+    <value>Наука</value>
+  </data>
+  <data name="sgSociety" xml:space="preserve">
+    <value>Суспільство</value>
+  </data>
+  <data name="sgSport" xml:space="preserve">
+    <value>Спорт</value>
+  </data>
+  <data name="sgTransportation" xml:space="preserve">
+    <value>Перевезення</value>
+  </data>
+  <data name="Goals" xml:space="preserve">
+    <value>Ціль</value>
+  </data>
+  <data name="GoalsDescription1" xml:space="preserve">
+    <value>Дана програма створена для швидкого вивчення слів. Основна ціль - вивчати в середньому 50 слів за 1.5 години. З таким підходом необхідно 150 годин для вивчення 5,000 слів або 150 днів, якщо виділяти 1 годину в день.</value>
+  </data>
+  <data name="GoalsDescription2" xml:space="preserve">
+    <value>Мову можна умовно поділити на 3 складові: словниковий запас, граматика та вимова. У часовому співвідношенні процес вивчення наступний: 75% часу йде на вивчення слів, 15% часу на граматику, 10% на вимову.</value>
+  </data>
+  <data name="GoalsDescription3" xml:space="preserve">
+    <value>Дана програма створена для швидкого, самостійного вивчення англійських слів та вимови. Вивчення граматики рекомендується освоювати разом із викладачем, що на наш погляд є більш ефективно, але бажано це робити після вивчення слів. Для практики радимо спілкуватися при кожній можливості, читати книги, дивитися кінофільми та подорожувати. Ідеальний варіант для засвоєння – це поїхати в мовну школу на 2-5 тижні за кордон, що максимально пришвидшити.</value>
+  </data>
+  <data name="MainDescription" xml:space="preserve">
+    <value>Методика</value>
+  </data>
+  <data name="MainDescription1" xml:space="preserve">
+    <value>Дана програма включає 5,000 найбільш вживаних слів англійської мови. Знаючи їх можна розуміти біля 90% матеріалу та мати велику базу для подальшого вдосконалення. Перша частина програми включає 2,450 іменників. Інші частини мови плануються бути доданими згодом. Негативні слова були виключені із програми.</value>
+  </data>
+  <data name="MainDescription2" xml:space="preserve">
+    <value>Від перестановки доданків сума не міняється – це основний принцип групування слів. Основне – це вивчити слова, а в якому порядку залежить від кожного. Словники пропонують слова по алфавіту, майже всі навчальні підручники по групам: сім’я, робота, природу, та інші. Дана програма пропонує інші групи слів для максимально швидкого запам'ятовування.</value>
+  </data>
+  <data name="MainDescription3" xml:space="preserve">
+    <value>Група 1 включає 850 слів, які на українській та англійській мові мають подібну вимову. Група 2 включає 650 односкладових слів, які згруповані по звукам. Група 3 включає 950 багатоскладових слів, які згруповані по закінченням. На наш погляд, дана методологія вивчення слів доволі ефективна. Основний принцип запам'ятовування - це асоціаційні ряди.</value>
+  </data>
+  <data name="sgGroup4" xml:space="preserve">
+    <value>Всі слова</value>
+  </data>
+  <data name="Words" xml:space="preserve">
+    <value>слова</value>
+  </data>
+  <data name="sgGroup3" xml:space="preserve">
+    <value>Всі слова</value>
+  </data>
+  <data name="sgGroup5" xml:space="preserve">
+    <value>Всі слова</value>
+  </data>
+  <data name="sgSubgroup1" xml:space="preserve">
+    <value>Підгрупа 1</value>
+  </data>
+  <data name="sgSubgroup2" xml:space="preserve">
+    <value>Підгрупа 2</value>
+  </data>
+  <data name="sgSubgroup3" xml:space="preserve">
+    <value>Підгрупа 3</value>
+  </data>
+  <data name="sgSubgroup4" xml:space="preserve">
+    <value>Підгрупа 2</value>
+  </data>
+  <data name="ElapsedTime" xml:space="preserve">
+    <value>Ви навчаєтесь:</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>днів</value>
+  </data>
+  <data name="Time_spent" xml:space="preserve">
+    <value>Витрачений час</value>
+  </data>
+  <data name="sgApparelFood" xml:space="preserve">
+    <value>Одяг та їжа</value>
+  </data>
+  <data name="sgBuildingsMilitary" xml:space="preserve">
+    <value>Будівлі та військові</value>
+  </data>
+  <data name="sgArt" xml:space="preserve">
+    <value>Мистецтво</value>
+  </data>
+  <data name="sgReligionNationalities" xml:space="preserve">
+    <value>Релігія та національності</value>
+  </data>
+  <data name="word" xml:space="preserve">
+    <value>слів</value>
+  </data>
+  <data name="sg2_1" xml:space="preserve">
+    <value>Звук "e"</value>
+  </data>
+  <data name="sg2_10" xml:space="preserve">
+    <value>Звук "оу"</value>
+  </data>
+  <data name="sg2_11" xml:space="preserve">
+    <value>Звук "у"</value>
+  </data>
+  <data name="sg2_3" xml:space="preserve">
+    <value>Звук "ей"</value>
+  </data>
+  <data name="sg2_4" xml:space="preserve">
+    <value>Звук "a"</value>
+  </data>
+  <data name="sg2_5" xml:space="preserve">
+    <value>Звук "aй"</value>
+  </data>
+  <data name="sg2_6" xml:space="preserve">
+    <value>Звук "ay"</value>
+  </data>
+  <data name="sg2_7" xml:space="preserve">
+    <value>Звук "и"</value>
+  </data>
+  <data name="sg2_8" xml:space="preserve">
+    <value>Звук "i"</value>
+  </data>
+  <data name="sg2_9" xml:space="preserve">
+    <value>Звук "o"</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Hазва:</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Час:</value>
+  </data>
+  <data name="Words_K" xml:space="preserve">
+    <value>Cлів:</value>
+  </data>
+  <data name="DescriptionTitleGroup1" xml:space="preserve">
+    <value>ЛЕГКИЙ РІВЕНЬ</value>
+  </data>
+  <data name="DescriptionTitleGroup2" xml:space="preserve">
+    <value>ЛЕГКИЙ РІВЕНЬ</value>
+  </data>
+  <data name="DescriptionTitleGroup3" xml:space="preserve">
+    <value>СЕРЕДНІЙ РІВЕНЬ</value>
+  </data>
+  <data name="DescriptionTitleGroup4" xml:space="preserve">
+    <value>СЕРЕДНІЙ РІВЕНЬ</value>
+  </data>
+  <data name="DescriptionTitleGroup5" xml:space="preserve">
+    <value>СЕРЕДНІЙ РІВЕНЬ</value>
+  </data>
+  <data name="sg2_12" xml:space="preserve">
+    <value>Звуки з "р"</value>
+  </data>
+  <data name="sg3_01" xml:space="preserve">
+    <value>Закінчення "ер"</value>
+  </data>
+  <data name="sg3_03" xml:space="preserve">
+    <value>Закінчення "і"</value>
+  </data>
+  <data name="sg3_05" xml:space="preserve">
+    <value>Закінчення "т"</value>
+  </data>
+  <data name="sg3_06" xml:space="preserve">
+    <value>Закінчення "енс"</value>
+  </data>
+  <data name="sg3_08" xml:space="preserve">
+    <value>Закінчення "Інше"</value>
+  </data>
+  <data name="sg3_09" xml:space="preserve">
+    <value>Закінчення "ен"</value>
+  </data>
+  <data name="sg3_10" xml:space="preserve">
+    <value>Закінчення "інг"</value>
+  </data>
+  <data name="sg3_11" xml:space="preserve">
+    <value>Закінчення "шен"</value>
+  </data>
+  <data name="sg3_13" xml:space="preserve">
+    <value>Закінчення "шен"</value>
+  </data>
+  <data name="sg3_14" xml:space="preserve">
+    <value>Інші закінчення</value>
+  </data>
+  <data name="sg3_comp" xml:space="preserve">
+    <value>Складені слова</value>
+  </data>
+  <data name="sgCharacteristics" xml:space="preserve">
+    <value>Характеристика</value>
+  </data>
+  <data name="sgIT" xml:space="preserve">
+    <value>Інформаційні технології</value>
+  </data>
+  <data name="sgLegal" xml:space="preserve">
+    <value>Юриспруденція</value>
+  </data>
+  <data name="sg2_81" xml:space="preserve">
+    <value>Звук "oй"</value>
+  </data>
+  <data name="sg3_02" xml:space="preserve">
+    <value>Закінчення "ер"</value>
+  </data>
+  <data name="sg3_04" xml:space="preserve">
+    <value>Закінчення "ел"</value>
+  </data>
+  <data name="sg3_07" xml:space="preserve">
+    <value>Закінчення "ен"</value>
+  </data>
+  <data name="sg4_01" xml:space="preserve">
+    <value>Закінчення "ер"</value>
+  </data>
+  <data name="sg4_02" xml:space="preserve">
+    <value>Закінчення "і"</value>
+  </data>
+  <data name="sg4_03" xml:space="preserve">
+    <value>Закінчення "ті"</value>
+  </data>
+  <data name="sg4_04" xml:space="preserve">
+    <value>Закінчення "ел"</value>
+  </data>
+  <data name="sg4_05" xml:space="preserve">
+    <value>Закінчення "нт"</value>
+  </data>
+  <data name="sg4_06" xml:space="preserve">
+    <value>Закінчення "т"</value>
+  </data>
+  <data name="sg4_07" xml:space="preserve">
+    <value>Закінчення "енс"</value>
+  </data>
+  <data name="sg4_08" xml:space="preserve">
+    <value>Закінчення "інг"</value>
+  </data>
+  <data name="sg4_09" xml:space="preserve">
+    <value>Закінчення "шен"</value>
+  </data>
+  <data name="sg4_10" xml:space="preserve">
+    <value>Закінчення "шен"</value>
+  </data>
+  <data name="sg4_11" xml:space="preserve">
+    <value>Закінчення "шен"</value>
+  </data>
+  <data name="sg5_01" xml:space="preserve">
+    <value>Закінчення "ер"</value>
+  </data>
+  <data name="sg5_02" xml:space="preserve">
+    <value>Закінчення "інг"</value>
+  </data>
+  <data name="sg5_03" xml:space="preserve">
+    <value>Закінчення "шен"</value>
+  </data>
+  <data name="sg5_04" xml:space="preserve">
+    <value>Інші закінчення</value>
+  </data>
+  <data name="sg5_05" xml:space="preserve">
+    <value>по 2 слова</value>
+  </data>
+  <data name="sg5_06" xml:space="preserve">
+    <value>по 2 слова</value>
+  </data>
+  <data name="sg5_07" xml:space="preserve">
+    <value>по 3 слова</value>
+  </data>
+  <data name="sg5_08" xml:space="preserve">
+    <value>Закінчення “се”</value>
+  </data>
+  <data name="sg5_09" xml:space="preserve">
+    <value>Складені слова</value>
+  </data>
+  <data name="sg5_10" xml:space="preserve">
+    <value>Закінчення “ейдж”</value>
+  </data>
+  <data name="sg5_11" xml:space="preserve">
+    <value>Закінчення “ов”</value>
+  </data>
+  <data name="sg5_12" xml:space="preserve">
+    <value>Інше</value>
+  </data>
+  <data name="sg5_13" xml:space="preserve">
+    <value>Складені слова</value>
+  </data>
+  <data name="DescriptionGroup6" xml:space="preserve">
+    <value>Двоскладові слова з рифмами</value>
+  </data>
+  <data name="DescriptionGroup7" xml:space="preserve">
+    <value>Багатоскладові слова з асоціаціями</value>
+  </data>
+  <data name="DescriptionGroup8" xml:space="preserve">
+    <value>Багатоскладові слова з рифмами</value>
+  </data>
+  <data name="DescriptionTitleGroup6" xml:space="preserve">
+    <value>ВАЖКИЙ РІВЕНЬ</value>
+  </data>
+  <data name="DescriptionTitleGroup7" xml:space="preserve">
+    <value>ВАЖКИЙ РІВЕНЬ</value>
+  </data>
+  <data name="DescriptionTitleGroup8" xml:space="preserve">
+    <value>ВАЖКИЙ РІВЕНЬ</value>
+  </data>
+  <data name="sg3" xml:space="preserve">
+    <value>Складені слова</value>
+  </data>
+  <data name="sg4" xml:space="preserve">
+    <value>Асоціації</value>
+  </data>
+  <data name="sg6_01" xml:space="preserve">
+    <value>Префікс “рі”</value>
+  </data>
+  <data name="sg6_02" xml:space="preserve">
+    <value>Закінчення “ер”</value>
+  </data>
+  <data name="sg6_03" xml:space="preserve">
+    <value>Закінчення “інг”</value>
+  </data>
+  <data name="sg6_04" xml:space="preserve">
+    <value>Закінчення “інг”</value>
+  </data>
+  <data name="sg6_05" xml:space="preserve">
+    <value>Закінчення “шен”</value>
+  </data>
+  <data name="sg6_06" xml:space="preserve">
+    <value>Закінчення “шен”</value>
+  </data>
+  <data name="sg6_07" xml:space="preserve">
+    <value>По 2 слова</value>
+  </data>
+  <data name="sg6_08" xml:space="preserve">
+    <value>По 2 слова</value>
+  </data>
+  <data name="sg6_09" xml:space="preserve">
+    <value>По 3 слова</value>
+  </data>
+  <data name="sg6_10" xml:space="preserve">
+    <value>По 3 слова</value>
+  </data>
+  <data name="sg6_11" xml:space="preserve">
+    <value>По 4 слова</value>
+  </data>
+  <data name="sg6_12" xml:space="preserve">
+    <value>По 4 слова</value>
+  </data>
+  <data name="sg7_01" xml:space="preserve">
+    <value>Асоціація х2</value>
+  </data>
+  <data name="sg7_11" xml:space="preserve">
+    <value>Асоціація х3</value>
+  </data>
+  <data name="sg8_01" xml:space="preserve">
+    <value>Закінчення “і”</value>
+  </data>
+  <data name="sg8_02" xml:space="preserve">
+    <value>Закінчення “ті”</value>
+  </data>
+  <data name="sg8_03" xml:space="preserve">
+    <value>Закінчення “ел”</value>
+  </data>
+  <data name="sg8_04" xml:space="preserve">
+    <value>Закінчення “ре”</value>
+  </data>
+  <data name="sg8_05" xml:space="preserve">
+    <value>Закінчення “т”</value>
+  </data>
+  <data name="sg8_06" xml:space="preserve">
+    <value>Закінчення “енс”</value>
+  </data>
+  <data name="sg8_07" xml:space="preserve">
+    <value>Закінчення “інг”</value>
+  </data>
+  <data name="sg8_08" xml:space="preserve">
+    <value>Закінчення “шен”</value>
+  </data>
+  <data name="sg8_09" xml:space="preserve">
+    <value>Закінчення “шен”</value>
+  </data>
+  <data name="sg8_10" xml:space="preserve">
+    <value>Закінчення “шен”</value>
+  </data>
+  <data name="CheckYourself" xml:space="preserve">
+    <value>Перевiр себе</value>
+  </data>
+</root>

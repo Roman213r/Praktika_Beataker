@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LogicApp.ViewModels"
+             xmlns:i18n="clr-namespace:LogicApp.Helpers;assembly=LogicApp"
+             xmlns:converters="clr-namespace:LogicApp.Services"
+             x:Class="LogicApp.Views.WordPage"
+             x:Name="theWordPage"
+             BackgroundColor="#fff7f8">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageFileToImageSourceConverter x:Key="ImageFileToImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid Margin="20, 10, 20, 10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Frame  CornerRadius="10"
+                    Margin="5,5,5,5"
+                    Padding="0"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    Grid.Row="0">
+                <Frame.BorderColor>
+                    <OnPlatform x:TypeArguments="Color"
+                                        iOS="White"
+                                        Android="MistyRose"
+                                        Default="MistyRose"/>
+                </Frame.BorderColor>
+                <StackLayout Spacing="0" BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <Image Source="{Binding UpdateSourceName, Converter={StaticResource ImageFileToImageSourceConverter}}" x:Name="wordImage" VerticalOptions="FillAndExpand">
+                        <Image.Aspect>
+                            <OnPlatform x:TypeArguments="Aspect"
+                                        iOS="AspectFit"
+                                        Android="AspectFit"
+                                        Default="AspectFit"/>
+                        </Image.Aspect>
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding TapCommand}"/>
+                            <SwipeGestureRecognizer Direction="Left" Command="{Binding NextWord}" />
+                            <SwipeGestureRecognizer Direction="Right" Command="{Binding PreviousWord}" />
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <Grid x:Name="buttonsGrid" ColumnSpacing="0" VerticalOptions="End">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="3*" />
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Row="0" Grid.Column="0"
+                                Command="{Binding PreviousWord}"
+                                Text="{i18n:Translate Previous}"
+                                x:Name="previousButton"
+                                VerticalOptions="Center"/>
+
+                        <ImageButton Grid.Row="0" Grid.Column="1"
+                                     Command="{Binding AutomatedPlay}"
+                                     Source="{Binding UpdatePlayImageSource, Converter={StaticResource ImageFileToImageSourceConverter}}"
+                                     x:Name="automatedPlayImageButton"
+                                     HeightRequest="{Binding Source={x:Reference automatedPlayImageButton}, Path=Width}">
+                            <ImageButton.Aspect>
+                                <OnPlatform x:TypeArguments="Aspect"
+                                        iOS="AspectFit"
+                                        Android="AspectFill"
+                                        Default="AspectFill"/>
+                            </ImageButton.Aspect>
+
+                        </ImageButton>
+
+                        <Button Grid.Row="0" Grid.Column="2"
+                                Command="{Binding NextWord}"
+                                Text="{i18n:Translate Next}"
+                                x:Name="nextButton"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+            <Frame  CornerRadius="10"
+                    Margin="5,5,5,5"
+                    Padding="0"
+                    Grid.Row="1">
+                <Frame.BorderColor>
+                    <OnPlatform x:TypeArguments="Color"
+                                        iOS="White"
+                                        Android="MistyRose"
+                                        Default="MistyRose"/>
+                </Frame.BorderColor>
+                <StackLayout Spacing="0" BackgroundColor="White" >
+                    <StackLayout Orientation="Horizontal" Margin="20, 10, 20, 5">
+                        <Label HorizontalTextAlignment="Start" Text="{Binding UpdateProgressionString}" x:Name="progressionText" TextColor="Black"/>
+                    </StackLayout>
+
+                    <!-- Progress bar -->
+                    <ProgressBar Progress="{Binding UpdateProgressionBar}" ProgressColor="#D25968" Margin="20, 5, 20, 10" x:Name="progressionBar"/>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

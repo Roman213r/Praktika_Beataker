@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="LogicApp.Views.ExaminationsPage"
+    xmlns:image="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+    <StackLayout BackgroundColor="Silver">
+        <Grid>
+            <image:CachedImage Source="resource://LogicApp.Resources.pictures.exampage.back_frame.png" VerticalOptions="StartAndExpand" HeightRequest="120" Aspect="AspectFill"/>
+            <CollectionView ItemsSource="{Binding Groups}" Margin="10">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Margin="0,0,0,10">
+                            <Frame CornerRadius="20" BackgroundColor="White" HasShadow="False" Padding="15,20,15,20">
+                                <FlexLayout JustifyContent="SpaceBetween" AlignItems="Center">
+                                    <StackLayout>
+                                        <Label Text="{Binding Letters, StringFormat='{0} слова'}" TextColor="{Binding GroupColor}" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                        <Label Text="{Binding DescriptionTitle}" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout WidthRequest="65">
+                                        <StackLayout.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                        </StackLayout.GestureRecognizers>
+                                        <Label Text="Значення" TextTransform="Uppercase" FontAttributes="Bold" TextColor="Black" FontSize="12" HorizontalTextAlignment="Center"/>
+                                        <image:CachedImage Source="resource://LogicApp.Resources.pictures.exampage.book.png" HeightRequest="70"/>
+                                    </StackLayout>
+                                    <StackLayout WidthRequest="65">
+                                        <StackLayout.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                                        </StackLayout.GestureRecognizers>
+                                        <Label Text="Письмо" TextTransform="Uppercase" FontAttributes="Bold" TextColor="Black" FontSize="12" HorizontalTextAlignment="Center"/>
+                                        <image:CachedImage Source="resource://LogicApp.Resources.pictures.exampage.pen.png" HeightRequest="70"/>
+                                    </StackLayout>
+                                    <StackLayout WidthRequest="65">
+                                        <Label Text="Вимова" TextTransform="Uppercase" FontAttributes="Bold" TextColor="Black" FontSize="12" HorizontalTextAlignment="Center"/>
+                                        <image:CachedImage Source="resource://LogicApp.Resources.pictures.exampage.voice.png" HeightRequest="70"/>
+                                    </StackLayout>
+                                </FlexLayout>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </StackLayout>
+</ContentPage>

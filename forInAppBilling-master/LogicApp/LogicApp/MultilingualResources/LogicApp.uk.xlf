@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="uk" original="LOGICAPP/RESOURCES/APPRESOURCES.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6901.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="LOGICAPP/RESOURCES/APPRESOURCES.RESX" datatype="resx">
+        <trans-unit id="About" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="new">About</target>
+        </trans-unit>
+        <trans-unit id="Next" translate="yes" xml:space="preserve">
+          <source>Next</source>
+          <target state="new">Next</target>
+        </trans-unit>
+        <trans-unit id="Previous" translate="yes" xml:space="preserve">
+          <source>Previous</source>
+          <target state="new">Previous</target>
+        </trans-unit>
+        <trans-unit id="Group" translate="yes" xml:space="preserve">
+          <source>Group</source>
+          <target state="new">Group</target>
+        </trans-unit>
+        <trans-unit id="Groups" translate="yes" xml:space="preserve">
+          <source>Groups</source>
+          <target state="new">Groups</target>
+        </trans-unit>
+        <trans-unit id="GroupSelection" translate="yes" xml:space="preserve">
+          <source>Select group</source>
+          <target state="new">Select group</target>
+        </trans-unit>
+        <trans-unit id="Progression" translate="yes" xml:space="preserve">
+          <source>Progression: </source>
+          <target state="new">Progression: </target>
+        </trans-unit>
+        <trans-unit id="Resume" translate="yes" xml:space="preserve">
+          <source>Resume</source>
+          <target state="new">Resume</target>
+        </trans-unit>
+        <trans-unit id="No" translate="yes" xml:space="preserve">
+          <source>No</source>
+          <target state="new">No</target>
+        </trans-unit>
+        <trans-unit id="ResumeQuestion" translate="yes" xml:space="preserve">
+          <source>Do you want to resume where you were?</source>
+          <target state="new">Do you want to resume where you were?</target>
+        </trans-unit>
+        <trans-unit id="Yes" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+          <target state="new">Yes</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="Groups" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="GroupSelection" xml:space="preserve">
+    <value>Get started!</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Progression: </value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Resume</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ResumeQuestion" xml:space="preserve">
+    <value>Do you want to resume where you were?</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>Test</value>
+    <comment>Just to regenerate file...</comment>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>English with Logic</value>
+  </data>
+  <data name="DescriptionGroup1" xml:space="preserve">
+    <value>Similar Pronunciation</value>
+  </data>
+  <data name="DescriptionGroup2" xml:space="preserve">
+    <value>One syllabus words</value>
+  </data>
+  <data name="DescriptionGroup3" xml:space="preserve">
+    <value>Compound nouns</value>
+  </data>
+  <data name="DescriptionGroup4" xml:space="preserve">
+    <value>Associations for two syllables word</value>
+  </data>
+  <data name="DescriptionGroup5" xml:space="preserve">
+    <value>Rhythms for two syllables word</value>
+  </data>
+  <data name="GroupeDescription" xml:space="preserve">
+    <value>Group description</value>
+  </data>
+  <data name="NeverShowAgain" xml:space="preserve">
+    <value>Never show again</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="NothingResume" xml:space="preserve">
+    <value>Nothing to resume</value>
+  </data>
+  <data name="NothingResumeText" xml:space="preserve">
+    <value>You haven't begun anything yet.
+Choose a group.</value>
+  </data>
+  <data name="sgAnimals" xml:space="preserve">
+    <value>Animals</value>
+  </data>
+  <data name="sgApparel" xml:space="preserve">
+    <value>Apparel</value>
+  </data>
+  <data name="sgBehaviour" xml:space="preserve">
+    <value>Behavior</value>
+  </data>
+  <data name="sgEconomics" xml:space="preserve">
+    <value>Economics</value>
+  </data>
+  <data name="sgBody" xml:space="preserve">
+    <value>Body</value>
+  </data>
+  <data name="sgBuilding" xml:space="preserve">
+    <value>Building</value>
+  </data>
+  <data name="sgClothes" xml:space="preserve">
+    <value>Clothes</value>
+  </data>
+  <data name="sgEducation" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="sgEmotion" xml:space="preserve">
+    <value>Emotion</value>
+  </data>
+  <data name="sgFood" xml:space="preserve">
+    <value>Food</value>
+  </data>
+  <data name="sgJob" xml:space="preserve">
+    <value>Job</value>
+  </data>
+  <data name="sgLeisure" xml:space="preserve">
+    <value>Leisure</value>
+  </data>
+  <data name="sgNature" xml:space="preserve">
+    <value>Nature</value>
+  </data>
+  <data name="sgOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="sgPeople" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="sgReligion" xml:space="preserve">
+    <value>Religion</value>
+  </data>
+  <data name="sgTechnology" xml:space="preserve">
+    <value>Technology</value>
+  </data>
+  <data name="sgTransport" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="sgEnvironment" xml:space="preserve">
+    <value>Environment</value>
+  </data>
+  <data name="sgMachinery" xml:space="preserve">
+    <value>Machinery</value>
+  </data>
+  <data name="sgMedicine" xml:space="preserve">
+    <value>Medicine</value>
+  </data>
+  <data name="sgMilitary" xml:space="preserve">
+    <value>Military</value>
+  </data>
+  <data name="sgMusic" xml:space="preserve">
+    <value>Art</value>
+  </data>
+  <data name="sgNationality" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="sgPolitics" xml:space="preserve">
+    <value>Politics</value>
+  </data>
+  <data name="sgProfessions" xml:space="preserve">
+    <value>Professions</value>
+  </data>
+  <data name="sgScience" xml:space="preserve">
+    <value>Science</value>
+  </data>
+  <data name="sgSociety" xml:space="preserve">
+    <value>Society</value>
+  </data>
+  <data name="sgSport" xml:space="preserve">
+    <value>Sport</value>
+  </data>
+  <data name="sgTransportation" xml:space="preserve">
+    <value>Transportation</value>
+  </data>
+  <data name="Goals" xml:space="preserve">
+    <value>Goals</value>
+  </data>
+  <data name="GoalsDescription1" xml:space="preserve">
+    <value>This program is designed to learn as quickly as possible the words of another language. The main goal is to learn 100 words in 1-2 hours with the correct pronunciation and to keep words memorized in long-term memory. With this approach, learning 5,000 words requires 50-100 hours depending on your personal skills and abilities.</value>
+  </data>
+  <data name="GoalsDescription2" xml:space="preserve">
+    <value>In our opinion, the language can be divided into 3 different components: vocabulary, pronunciation and grammar. If conditionally divided in time ratio, then 75-80% of the time goes to the study of words, 10-5% for pronunciation and 15% for grammar, depending on the language.</value>
+  </data>
+  <data name="GoalsDescription3" xml:space="preserve">
+    <value>This program is designed for a quick, independent study of English words and pronunciation. It is recommended to study grammar with a teacher, which in our opinion is more effective, but it is desirable to do this after studying the words. For assimilation and use, we encourage you to chat, read books, watch movies and travel. The ideal option for assimilation is to go to a language school abroad for 2-5 weeks, which will maximize the assimilation of material. In our time, it becomes financially affordable for most of the population.</value>
+  </data>
+  <data name="MainDescription" xml:space="preserve">
+    <value>How it works</value>
+  </data>
+  <data name="MainDescription1" xml:space="preserve">
+    <value>This program includes 5,000 most used English words based on the vocabulary. Knowing them can be understood as about 90% of the material and have a great base for further improvement. The data of 5,000 words can be divided into nouns (), verbs, adjectives, and other parts of the language. In the first part of the program will be only nouns. Negative words were excluded from the program.</value>
+  </data>
+  <data name="MainDescription2" xml:space="preserve">
+    <value>The amount of permutations does not change - this is the main principle of the program. The main thing is to learn the words, and in what order depends on each one. Dictionaries offer words in alphabet, almost all textbooks in groups: family, work, nature, and other groups. This program offers for the maximum effectiveness of other groups.</value>
+  </data>
+  <data name="MainDescription3" xml:space="preserve">
+    <value>Group 1 includes 1500 words that have similar pronunciation in Ukrainian and English, so they can be studied most easily and fastest. Group 2 includes 800 words, having one composition, such words are easily remembered. Group 3 includes 100 words that are complex and created using compound words from Group 2.</value>
+  </data>
+  <data name="sgGroup4" xml:space="preserve">
+    <value>All words</value>
+  </data>
+  <data name="Words" xml:space="preserve">
+    <value>words</value>
+  </data>
+  <data name="sgGroup3" xml:space="preserve">
+    <value>All words</value>
+  </data>
+  <data name="sgGroup5" xml:space="preserve">
+    <value>All words</value>
+  </data>
+  <data name="sgSubgroup1" xml:space="preserve">
+    <value>Subgroup 1</value>
+  </data>
+  <data name="sgSubgroup2" xml:space="preserve">
+    <value>Subgroup 2</value>
+  </data>
+  <data name="sgSubgroup3" xml:space="preserve">
+    <value>Subgroup 3</value>
+  </data>
+  <data name="sgSubgroup4" xml:space="preserve">
+    <value>Subgroup 4</value>
+  </data>
+  <data name="ElapsedTime" xml:space="preserve">
+    <value>You've been learning for:</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="Time_spent" xml:space="preserve">
+    <value>Time spent</value>
+  </data>
+  <data name="sgApparelFood" xml:space="preserve">
+    <value>Apparel and food</value>
+  </data>
+  <data name="sgBuildingsMilitary" xml:space="preserve">
+    <value>Buildings and military</value>
+  </data>
+  <data name="sgArt" xml:space="preserve">
+    <value>Art</value>
+  </data>
+  <data name="sgReligionNationalities" xml:space="preserve">
+    <value>Religion and nationaly</value>
+  </data>
+  <data name="word" xml:space="preserve">
+    <value>words</value>
+  </data>
+  <data name="sg2_1" xml:space="preserve">
+    <value>Sound _e_</value>
+  </data>
+  <data name="sg2_10" xml:space="preserve">
+    <value>Sound _оу_</value>
+  </data>
+  <data name="sg2_11" xml:space="preserve">
+    <value>Sound _у_</value>
+  </data>
+  <data name="sg2_3" xml:space="preserve">
+    <value>Sound _ей_</value>
+  </data>
+  <data name="sg2_4" xml:space="preserve">
+    <value>Sound _a_</value>
+  </data>
+  <data name="sg2_5" xml:space="preserve">
+    <value>Sound _aй_</value>
+  </data>
+  <data name="sg2_6" xml:space="preserve">
+    <value>Sound_ay_</value>
+  </data>
+  <data name="sg2_7" xml:space="preserve">
+    <value>Sound _и_</value>
+  </data>
+  <data name="sg2_8" xml:space="preserve">
+    <value>Sound _i_</value>
+  </data>
+  <data name="sg2_9" xml:space="preserve">
+    <value>Sound _o_</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Theme:</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time:</value>
+  </data>
+  <data name="Words_K" xml:space="preserve">
+    <value>Words:</value>
+  </data>
+  <data name="DescriptionTitleGroup1" xml:space="preserve">
+    <value>Group 1</value>
+  </data>
+  <data name="DescriptionTitleGroup2" xml:space="preserve">
+    <value>Group 2</value>
+  </data>
+  <data name="DescriptionTitleGroup3" xml:space="preserve">
+    <value>Group 3</value>
+  </data>
+  <data name="DescriptionTitleGroup4" xml:space="preserve">
+    <value>Group 4</value>
+  </data>
+  <data name="DescriptionTitleGroup5" xml:space="preserve">
+    <value>Group 5</value>
+  </data>
+  <data name="sg2_12" xml:space="preserve">
+    <value>Sound _r_</value>
+  </data>
+  <data name="sg3_01" xml:space="preserve">
+    <value>-er</value>
+  </data>
+  <data name="sg3_03" xml:space="preserve">
+    <value>-y</value>
+  </data>
+  <data name="sg3_05" xml:space="preserve">
+    <value>-t</value>
+  </data>
+  <data name="sg3_06" xml:space="preserve">
+    <value>-nce</value>
+  </data>
+  <data name="sg3_08" xml:space="preserve">
+    <value>Інше</value>
+  </data>
+  <data name="sg3_09" xml:space="preserve">
+    <value>en</value>
+  </data>
+  <data name="sg3_10" xml:space="preserve">
+    <value>-ing</value>
+  </data>
+  <data name="sg3_11" xml:space="preserve">
+    <value>-ion</value>
+  </data>
+  <data name="sg3_13" xml:space="preserve">
+    <value>age/ow</value>
+  </data>
+  <data name="sg3_14" xml:space="preserve">
+    <value>ord/ue/ness</value>
+  </data>
+  <data name="sg3_comp" xml:space="preserve">
+    <value>Compound</value>
+  </data>
+  <data name="sgCharacteristics" xml:space="preserve">
+    <value>Characteristics</value>
+  </data>
+  <data name="sgIT" xml:space="preserve">
+    <value>IT</value>
+  </data>
+  <data name="sgLegal" xml:space="preserve">
+    <value>Legal</value>
+  </data>
+  <data name="sg2_81" xml:space="preserve">
+    <value>Sound _ɔɪ_</value>
+  </data>
+  <data name="sg3_02" xml:space="preserve">
+    <value>-er</value>
+  </data>
+  <data name="sg3_04" xml:space="preserve">
+    <value>-le</value>
+  </data>
+  <data name="sg3_07" xml:space="preserve">
+    <value>-en</value>
+  </data>
+  <data name="DescriptionGroup6" xml:space="preserve">
+    <value>Associations group</value>
+  </data>
+  <data name="DescriptionGroup7" xml:space="preserve">
+    <value>Associations for long words</value>
+  </data>
+  <data name="DescriptionGroup8" xml:space="preserve">
+    <value>Rhythms for long words</value>
+  </data>
+  <data name="DescriptionTitleGroup6" xml:space="preserve">
+    <value>Group 6</value>
+  </data>
+  <data name="DescriptionTitleGroup7" xml:space="preserve">
+    <value>Group 7</value>
+  </data>
+  <data name="DescriptionTitleGroup8" xml:space="preserve">
+    <value>Group 8</value>
+  </data>
+  <data name="sg3" xml:space="preserve">
+    <value>Compound nouns</value>
+  </data>
+  <data name="sg4" xml:space="preserve">
+    <value>Associations</value>
+  </data>
+  <data name="CheckYourself" xml:space="preserve">
+    <value>Check yourself</value>
+  </data>
+</root>

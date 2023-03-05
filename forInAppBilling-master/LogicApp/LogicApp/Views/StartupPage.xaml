@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             xmlns:i18n="clr-namespace:LogicApp.Helpers;assembly=LogicApp"
+             x:Class="LogicApp.Views.StartupPage"
+             BackgroundImage="startupPage.png">
+    <ContentPage.Content>
+        <Grid >
+            <Image Source="startupPage.png">
+                <Image.Aspect>
+                    <OnPlatform x:TypeArguments="Aspect"
+                                        iOS="AspectFit"
+                                        Android="AspectFill"
+                                        Default="AspectFill"/>
+                </Image.Aspect>
+            </Image>
+            <StackLayout VerticalOptions="EndAndExpand"
+                     Margin="40,40,40,40">
+
+                <Label FontAttributes="Bold" FontSize="15" HorizontalTextAlignment="Center" TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="{i18n:Translate ElapsedTime}"/>
+                                <Span Text=" "/>
+                                <Span Text="{Binding TimeSpentString}"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button
+                x:Name="ResumeButton"
+                Clicked="OnResumeClicked"
+                Text="{i18n:Translate Resume}"
+                BackgroundColor="#D25968"
+                BorderColor="#D25968"
+                TextColor="White"
+                BorderWidth = "0">
+                    <Button.CornerRadius>
+                        <OnPlatform x:TypeArguments="x:Int32"
+                                iOS="20"
+                                Android="50"
+                                Default="50"/>
+                    </Button.CornerRadius>
+                </Button>
+
+                <Button
+                    x:Name="MenuButton"
+                    Clicked="OnMenuClicked"
+                    Text="{i18n:Translate GroupSelection}"
+                    BackgroundColor="#D25968"
+                    BorderColor="#D25968"
+                    TextColor="White"
+                    BorderWidth = "0">
+                    <Button.CornerRadius>
+                        <OnPlatform x:TypeArguments="x:Int32"
+                                iOS="20"
+                                Android="50"
+                                Default="50"/>
+                    </Button.CornerRadius>
+                </Button>
+
+                <Button
+                    Clicked="Button_Clicked"
+                    Text="{i18n:Translate CheckYourself}"
+                    BackgroundColor="#D25968"
+                    BorderColor="#D25968"
+                    TextColor="White"
+                    BorderWidth = "0">
+                    <Button.CornerRadius>
+                        <OnPlatform x:TypeArguments="x:Int32"
+                                iOS="20"
+                                Android="50"
+                                Default="50"/>
+                    </Button.CornerRadius>
+                </Button>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button
+                        Grid.Row="0" Grid.Column="0"
+                        x:Name="GoalsButton"
+                        Clicked="OnGoalsMenuClicked"
+                        Text="{i18n:Translate Goals}"
+                        BackgroundColor="#D25968"
+                        BorderColor="#D25968"
+                        TextColor="White"
+                        BorderWidth = "0">
+                        <Button.CornerRadius>
+                            <OnPlatform x:TypeArguments="x:Int32"
+                                iOS="20"
+                                Android="50"
+                                Default="50"/>
+                        </Button.CornerRadius>
+                    </Button>
+                    <Button                 
+                        Grid.Row="0" Grid.Column="1"
+                        x:Name="InfosButton"
+                        Clicked="OnDescriptionMenuClicked"
+                        Text="{i18n:Translate MainDescription}"
+                        BackgroundColor="#D25968"
+                        BorderColor="#D25968"
+                        TextColor="White"
+                        BorderWidth = "0">
+                        <Button.CornerRadius>
+                            <OnPlatform x:TypeArguments="x:Int32"
+                                iOS="20"
+                                Android="50"
+                                Default="50"/>
+                        </Button.CornerRadius>
+
+                    </Button>
+                </Grid>
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

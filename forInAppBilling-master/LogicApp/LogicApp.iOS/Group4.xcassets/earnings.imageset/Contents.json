@@ -1,0 +1,33 @@
+{
+  "images": [
+    {
+      "appearances": [],
+      "scale": "1x",
+      "idiom": "universal"
+    },
+    {
+      "appearances": [],
+      "scale": "2x",
+      "idiom": "universal"
+    },
+    {
+      "appearances": [],
+      "scale": "3x",
+      "idiom": "universal"
+    },
+    {
+      "appearances": [],
+      "idiom": "universal",
+      "filename": "g4_earnings.pdf"
+    }
+  ],
+  "properties": {
+    "on-demand-resource-tags": [
+      "Group4"
+    ]
+  },
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}

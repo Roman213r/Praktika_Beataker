@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "79977437411",
+    "project_id": "brainfor-cfc60",
+    "storage_bucket": "brainfor-cfc60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79977437411:android:c3c0c12bb896a3316c4dd6",
+        "android_client_info": {
+          "package_name": "app.brainfor.LogicApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79977437411-gpoqlpuihuob2r90eijq95rk1q97lgla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOAcZeFSxIvAor0bFnn5iKcHKH6X46sIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79977437411-gpoqlpuihuob2r90eijq95rk1q97lgla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
